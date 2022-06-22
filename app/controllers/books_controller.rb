@@ -1,7 +1,7 @@
 class BooksController < ApplicationController
   def new
     @list = Book.new
-    @lists = Book.all
+    @lists = Book.all.order(created_at: :desc)
   end
   def create
     @list = Book.new(lists_params)
