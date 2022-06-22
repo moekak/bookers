@@ -1,0 +1,16 @@
+<% if @list.save%>
+    <p>Book was successfully created.</p>
+<% end %>
+<div class="title_show">
+    <h2>Title: <span><%= @list.title %></span></h2>
+</div>
+
+
+<div class="body_show">
+    <h2>Body: <span><%= @list.body %></span></h2>
+</div>
+
+
+<%= link_to 'Edit', edit_books_path(@list.id) %>
+<%= link_to 'Back', "/books" %>
+

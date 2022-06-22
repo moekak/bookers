@@ -1,0 +1,58 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body{
+  margin-left:5%;
+  width:60%;
+}
+.content{
+  display:flex;
+
+}
+.name{
+  display:flex;
+  gap: 10%;
+}
+.name h3{
+  width:30%;
+  text-align:center;
+}
+.content{
+  gap:10%;
+}
+.content .title{
+  width:30%;
+}
+.content .body{
+  width:30%;
+}
+.create{
+  margin-top:5%;
+}
+.submit{
+  margin-top:3%;
+}
+.title_show{
+  display:flex;
+  flex-direction:colum;
+  aligin-item:center;
+  justfy-content:center;
+}
+.title_show span{
+  font-weigt:10px;
+  width:30%;
+  height:50%;
+}
+.error{
+  border:1px solid red;
+  background-color:red;
+  color:white;
+  width:80%;
+}
+.errors{
+  border:1px solid red;
+  width:80%;
+}
+.button {
+  color:black;
+}
