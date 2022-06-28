@@ -1,16 +1,18 @@
-<% if @list.save%>
-    <p>Book was successfully created.</p>
+<% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
 <% end %>
 <div class="title_show">
-    <h2>Title: <span><%= @list.title %></span></h2>
+    <h2>Title: <span><%= @book.title %></span></h2>
 </div>
 
 
 <div class="body_show">
-    <h2>Body: <span><%= @list.body %></span></h2>
+    <h2>Body: <span><%= @book.body %></span></h2>
 </div>
 
 
-<%= link_to 'Edit', edit_books_path(@list.id) %>
+<%= link_to 'Edit', edit_book_path(@book.id) %>
 <%= link_to 'Back', "/books" %>
 
